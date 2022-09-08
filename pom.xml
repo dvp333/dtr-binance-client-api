@@ -6,11 +6,11 @@
 
     <groupId>br.com.dtr.dtr-binance-client-api</groupId>
     <artifactId>dtr-binance-client-api</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 
     <name>dtr-binance-client-api</name>
     <description>
-        This project is a library for calling Binance API. It allow you to enable the Testnet
+        This project is a library for calling Binance API and also enable the Testnet enviroment.
     </description>
     <url>http://thegreatapi.com</url>
 

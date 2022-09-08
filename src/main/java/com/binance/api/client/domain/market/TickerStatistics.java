@@ -23,7 +23,7 @@ public class TickerStatistics {
   /**
    * Price change, in percentage, during the last 24 hours.
    */
-  private String priceChangePercent;
+  private Double priceChangePercent;
 
   /**
    * Weighted average price.
@@ -103,11 +103,11 @@ public class TickerStatistics {
     this.priceChange = priceChange;
   }
 
-  public String getPriceChangePercent() {
+  public Double getPriceChangePercent() {
     return priceChangePercent;
   }
 
-  public void setPriceChangePercent(String priceChangePercent) {
+  public void setPriceChangePercent(Double priceChangePercent) {
     this.priceChangePercent = priceChangePercent;
   }
 
