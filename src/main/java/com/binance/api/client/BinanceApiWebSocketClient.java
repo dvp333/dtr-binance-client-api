@@ -32,12 +32,25 @@ public interface BinanceApiWebSocketClient extends Closeable {
 
     /**
      * Open a new web socket to receive {@link AggTradeEvent aggTradeEvents} on a callback.
+     * 
+     * The Aggregate Trade Streams push trade information that is aggregated for a single taker order.
      *
      * @param symbols  market (one or coma-separated) symbol(s) to subscribe to
      * @param callback the callback to call on new events
      * @return a {@link Closeable} that allows the underlying web socket to be closed.
      */
     Closeable onAggTradeEvent(String symbols, BinanceApiCallback<AggTradeEvent> callback);
+
+    /**
+     * Open a new web socket to receive {@link TradeEvent tradeEvents} on a callback.
+     * 
+     * The Trade Streams push raw trade information; each trade has a unique buyer and seller.
+     *
+     * @param symbols  market (one or coma-separated) symbol(s) to subscribe to
+     * @param callback the callback to call on new events
+     * @return a {@link Closeable} that allows the underlying web socket to be closed.
+     */
+    Closeable onTradeEvent(String symbols, BinanceApiCallback<TradeEvent> callback);
 
     /**
      * Open a new web socket to receive {@link UserDataUpdateEvent userDataUpdateEvents} on a callback.
