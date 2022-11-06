@@ -1,10 +1,7 @@
-# Demo Library
-This project is a library for padding Strings in Java.
+# DTR Binance Client API
+This project maps Binance endpoints to use for trading purposes.
 
----
-**WARNING**
 
-Don't use this in production. It was created for demo purposes only.
 
 ---
 
@@ -13,18 +10,7 @@ Don't use this in production. It was created for demo purposes only.
 Add the following dependency:
 ````XML
 <dependency>
-    <groupId>com.thegreatapi.demolibrary</groupId>
-    <artifactId>demolibrary</artifactId>
+    <groupId>com.github.dvp333</groupId>
+    <artifactId>dtr-binance-client-api</artifactId>
     <version>${VERSION}</version>
 </dependency>
-````
-The folling code
-````java
-String paddedString = this.stringPadder.padLeft("My String", 30, '-');
-System.out.println(paddedString);
-````
-Will print:
-
-````
----------------------My String
-````
