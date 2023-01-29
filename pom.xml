@@ -6,7 +6,7 @@
 
     <groupId>br.com.dtr.dtr-binance-client-api</groupId>
     <artifactId>dtr-binance-client-api</artifactId>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
 
     <name>dtr-binance-client-api</name>
     <description>

@@ -147,6 +147,22 @@ public interface BinanceApiRestClient {
   TickerPrice getPrice(String symbol);
 
   /**
+   *  WINDOW SIZE:
+   * 
+   *    Defaults to 1d if no parameter provided
+   *    Supported windowSize values:
+   *    1m,2m....59m for minutes
+   *    1h, 2h....23h - for hours
+   *    1d...7d - for days
+   * 
+   * @param symbol
+   * @param windowSize
+   * @param type
+   * @return
+   */
+  List<TickerPrice> getPriceChangeStatistics(String symbol, String windowSize, String type);
+
+  /**
    * Get best price/qty on the order book for all symbols.
    */
   List<BookTicker> getBookTickers();
