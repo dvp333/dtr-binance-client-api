@@ -156,11 +156,12 @@ public interface BinanceApiRestClient {
    *    1d...7d - for days
    * 
    * @param symbol
+   * @param symbols
    * @param windowSize
    * @param type
    * @return
    */
-  List<TickerPrice> getPriceChangeStatistics(String symbol, String windowSize, String type);
+  List<TickerStatistics> getPriceChangeStatistics(String symbol, String symbols, String windowSize, String type);
 
   /**
    * Get best price/qty on the order book for all symbols.

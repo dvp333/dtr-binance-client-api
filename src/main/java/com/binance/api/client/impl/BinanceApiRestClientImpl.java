@@ -111,11 +111,12 @@ public class BinanceApiRestClientImpl implements BinanceApiRestClient {
 	}
 
 	@Override
-	public List<TickerPrice> getPriceChangeStatistics(
+	public List<TickerStatistics> getPriceChangeStatistics(
         String symbol,
+		String symbols,
         String windowSize,
         String type) {
-			return executeSync(binanceApiService.getPriceChangeStatistics(symbol, windowSize, type));
+			return executeSync(binanceApiService.getPriceChangeStatistics(symbol, symbols, windowSize, type));
 		}
 
 	@Override

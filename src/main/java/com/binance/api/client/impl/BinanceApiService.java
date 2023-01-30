@@ -71,8 +71,9 @@ public interface BinanceApiService {
     Call<TickerPrice> getLatestPrice(@Query("symbol") String symbol);
 
     @GET("/api/v3/ticker")
-    Call<List<TickerPrice>> getPriceChangeStatistics(
+    Call<List<TickerStatistics>> getPriceChangeStatistics(
         @Query("symbol") String symbol,
+        @Query("symbols") String symbols,
         @Query("windowSize") String windowSize,
         @Query("type") String type);
 
